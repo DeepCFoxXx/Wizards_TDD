@@ -7,4 +7,8 @@ class Wizard
     @wand = wand
   end
 
+  def cast_spell(spell_name)
+    @wand.cast(spell_name)
+  end
+
 end
