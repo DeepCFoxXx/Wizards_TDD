@@ -16,7 +16,11 @@ class TestWizard < MiniTest::Test
   end
 
   def test_can_cast_spell
-    assert_equal("stupor", @ron.cast_spell("stupor"))
+    assert_equal("Stupor", @ron.cast_spell("Stupor"))
+  end
+
+  def test_can_cast_stronger_spell
+    assert_equal("Expecto Patronum", @harry.cast_spell("Expecto Patronum"))
   end
 
 end
